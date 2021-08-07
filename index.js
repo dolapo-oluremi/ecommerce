@@ -4,17 +4,17 @@
 const openBtn = document.querySelector(".open-btn");
 const closeBtn = document.querySelector(".close-btn");
 const navMenu = document.querySelector(".nav-list");
-const icon = document.querySelectorAll("i")[10];
-console.log(icon);
 
 openBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("show")
-
-    if (navMenu.classList.contains("show")) {
-        icon.classList.replace("fa-bars", "fa-times")
-        console.log(icon);
-    } else {
-        icon.classList.replace("fa-times", "fa-bars")
+    navMenu.classList.add("show")
+    if(navMenu.classList.contains("show")){
+        openBtn.style.display="none"
+    }
+})
+closeBtn.addEventListener("click", () => {
+    navMenu.classList.remove("show")
+    if(!navMenu.classList.contains("show")){
+        openBtn.style.display="block"
     }
 })
 
