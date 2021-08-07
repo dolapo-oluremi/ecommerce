@@ -588,7 +588,7 @@ nav .wrapper {
   visibility: visible;
 }
 
-.gallery-item:hover .image img {
+.gallery-item:hover .image .img-scale {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }

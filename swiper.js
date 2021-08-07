@@ -12,8 +12,9 @@ var swiper = new Swiper(".hero-swiper", {
 
 
 
-var swiper2 = new Swiper(".main-ad-swiper", {
+var swiper2 = new Swiper(".kids-swiper", {
     autoplay: true,
     loop: true,
-    speed: 300
+    speed: 250,
+    pauseOnMouseEnter: true,
 });
